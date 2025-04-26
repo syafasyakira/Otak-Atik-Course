@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Sekarang - OtakAtik!</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">OtakAtik!</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about-section">Tentang</a></li>
+          <li><a href="#class-section">Kelas</a></li>
+          <li><a href="#contact-section">Kontak</a></li>
+          <li><a href="coba-gratis.html" class="btn-coba">Coba Gratis!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="form-fullscreen">
+    <img src="https://storage.googleapis.com/a1aa/image/b36951d5-15d5-4242-4f85-d355545d8250.jpg" alt="Background Sains" class="form-bg" />
+    <div class="form-overlay">
+      <div class="form-container">
+        <form class="form-box" id="daftarForm">
+          <div class="form-group">
+            <label for="namaAnak">Nama Anak: <span class="required">*</span></label>
+            <input id="namaAnak" type="text" placeholder="Contoh: Nara Putri" required />
+          </div>
+          <div class="form-group">
+            <label for="usia">Usia: <span class="required">*</span></label>
+            <input id="usia" type="text" placeholder="Contoh: 7 tahun" required />
+          </div>
+          <div class="form-group">
+            <label for="kelas">Kelas yang akan dicoba: <span class="required">*</span></label>
+            <input list="kelasList" id="kelas" name="kelas" placeholder="Pilih kelas" required />
+            <datalist id="kelasList">
+              <option value="Menggambar & Mewarnai"></option>
+              <option value="Matematika Seru"></option>
+              <option value="Sains Eksperimen"></option>
+              <option value="Coding untuk Anak"></option>
+              <option value="Musik dan Lagu Anak"></option>
+              <option value="Bahasa Inggris Fun"></option>
+            </datalist>
+          </div>          
+          <div class="form-group">
+            <label for="hp">Nomor HP orang tua: <span class="required">*</span></label>
+            <input id="hp" type="text" placeholder="Contoh: 081234567890" pattern="08[0-9]{8,11}" required />
+            <small id="hp-warning" class="warning-text">Format nomor tidak valid</small>
+          </div>
+          <div class="form-group">
+            <label for="kota">Kota cabang: <span class="required">*</span></label>
+            <input list="kotaList" id="kota" name="kota" placeholder="Pilih kota" required />
+            <datalist id="kotaList">
+              <option>Pilih kota</option>
+              <option>Bandung</option>
+              <option>Bali</option>
+              <option>Batam</option>
+              <option>Bekasi</option>
+              <option>Bogor</option>
+              <option>Cirebon</option>
+              <option>Denpasar</option>
+              <option>Jakarta Selatan</option>
+              <option>Lampung</option>
+              <option>Malang</option>
+              <option>Makassar</option>
+              <option>Maluku</option>
+              <option>Manado</option>
+              <option>Medan</option>
+              <option>Palembang</option>
+              <option>Pekanbaru</option>
+              <option>Solo</option>
+              <option>Surabaya</option>
+              <option>Yogyakarta</option>
+            </datalist>
+          </div>
+          <div class="form-submit">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+
+        <div class="payment-box" id="paymentSection" style="display:none;">
+          <h3>📒 Informasi Pembayaran:</h3>
+          <p>💰 <strong>Rp150.000 / bulan</strong> per kelas</p>
+          <p>📲 Metode pembayaran:</p>
+          <ul>
+            <li>🏦 Transfer Bank (A.N. OtakAtikEdu):<br>
+              BCA: 1234567890<br>
+              Mandiri: 9876543210<br>
+              BNI: 1122334455</li>
+            <li>💳 E-Wallet (OVO, GoPay, DANA):<br>
+              0812-3456-7890 (A.N Otak Atik Edu)</li>
+          </ul>
+          <div class="form-submit">
+            <button class="upload-btn">Unggah Bukti Pembayaran</button>
+          </div>
+          <p class="payment-info">
+            Admin akan memverifikasi dan mengirimkan konfirmasi melalui WhatsApp dalam 1x24 jam. Jika belum menerima konfirmasi, hubungi kami di WhatsApp (0812-0000-0000).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

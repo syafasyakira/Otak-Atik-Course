@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coba Gratis - OtakAtik!</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">OtakAtik!</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about-section">Tentang</a></li>
+          <li><a href="#class-section">Kelas</a></li>
+          <li><a href="#contact-section">Kontak</a></li>
+          <li><a href="coba-gratis.html" class="btn-coba">Coba Gratis!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="form-fullscreen">
+    <img src="https://storage.googleapis.com/a1aa/image/b36951d5-15d5-4242-4f85-d355545d8250.jpg" alt="Anak belajar sains" class="form-bg" />
+    <div class="form-overlay">
+      <form class="form-box" id="cobaForm">
+        <h2>Coba Gratis OtakAtik!</h2>
+        <div class="form-group">
+          <label for="nama">Nama Anak:</label>
+          <input id="nama" type="text" placeholder="Contoh: Nara Putri" required />
+        </div>
+        <div class="form-group">
+          <label for="usia">Usia:</label>
+          <input id="usia" type="text" placeholder="Contoh: 7 tahun" required />
+        </div>
+        <div class="form-group">
+          <label for="kelas">Kelas yang akan dicoba:</label>
+          <input list="kelas-options" id="kelas" placeholder="Pilih kelas atau ketik" required />
+          <datalist id="kelas-options">
+            <option value="Menggambar & Mewarnai">
+            <option value="Matematika Seru">
+            <option value="Sains Eksperimen">
+            <option value="Coding untuk Anak">
+            <option value="Musik dan Lagu Anak">
+            <option value="Bahasa Inggris Fun">
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="hp">Nomor HP orang tua:</label>
+          <input id="hp" type="text" placeholder="Contoh: 081234567890" required />
+        </div>
+        <div class="form-group">
+          <label for="kota">Kota cabang:</label>
+          <input list="kota-options" id="kota" placeholder="Pilih kota atau ketik" required />
+          <datalist id="kota-options">
+            <option value="Bandung">
+            <option value="Bali">
+            <option value="Batam">
+            <option value="Bekasi">
+            <option value="Bogor">
+            <option value="Cirebon">
+            <option value="Denpasar">
+            <option value="Jakarta Selatan">
+            <option value="Lampung">
+            <option value="Malang">
+            <option value="Makassar">
+            <option value="Maluku">
+            <option value="Manado">
+            <option value="Medan">
+            <option value="Palembang">
+            <option value="Pekanbaru">
+            <option value="Solo">
+            <option value="Surabaya">
+            <option value="Yogyakarta">
+          </datalist>
+        </div>
+        <div class="form-submit">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
